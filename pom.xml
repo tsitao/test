@@ -9,7 +9,7 @@
 	
 	<scm>  
   		<connection>scm:git:git@github.com:tsitao/test.git</connection>  
-  		<developerConnection>scm:git:git@github.com:tsitao/test.git/</developerConnection>  
+  		<developerConnection>scm:git:git@github.com:tsitao/test.git</developerConnection>  
 	  <tag>demo-0.1</tag>
   </scm>
 
