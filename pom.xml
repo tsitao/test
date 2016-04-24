@@ -54,6 +54,42 @@
 		</dependency>
 
 	</dependencies>
+	
+	<repositories>
+        <repository>
+            <id>nexus</id>
+            <name>Nexus</name>
+            <url>http://192.168.1.107:8081/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+    <pluginRepositories>  
+        <pluginRepository>  
+            <id>nexus</id>  
+            <name>Nexus</name>  
+            <url>http://192.168.1.107:8081/nexus/content/groups/public/</url>  
+            <releases>  
+                <enabled>true</enabled>  
+            </releases>  
+            <snapshots>  
+                <enabled>true</enabled>  
+            </snapshots>  
+        </pluginRepository>  
+    </pluginRepositories> 
+    
+    <distributionManagement>  
+        <repository>  
+            <id>releases</id>  
+            <url>http://192.168.1.107:8081/nexus/content/repositories/thirdparty/</url>  
+        </repository>  
+	</distributionManagement>
+	
 	<build>
 		<finalName>jerseytest</finalName>
 		<plugins>
@@ -73,4 +109,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
