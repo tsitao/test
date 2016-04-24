@@ -8,13 +8,14 @@ import com.tony.jersey.resource.UserResource;
 
 public class APIApplication extends ResourceConfig {
 	public APIApplication() {
-		// ¼ÓÔØResource
+		// åŠ è½½Resource
 		register(UserResource.class);
 
-		// ×¢²áÊı¾İ×ª»»Æ÷
+		// æ³¨å†Œæ•°æ®è½¬æ¢å™¨
 		register(JacksonJsonProvider.class);
 
 		// Logging.
 		register(LoggingFilter.class);
 	}
 }
+
